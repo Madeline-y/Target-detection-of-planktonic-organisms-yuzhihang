@@ -136,7 +136,7 @@ pip install torch torchvision opencv-python numpy matplotlib pillow
 
 ## 九、数据集说明
 
-本项目使用的数据主要是海洋浮游生物图像数据。数据来源是https://opendata.eawag.ch/dataset/52b6ba86-5ecb-448c-8c01-eec7cb209dc7/resource/1cc785fa-36c2-447d-bb11-92ce1d1f3f2d/download/data.zip， 图像中包含不同类型的浮游生物目标，模型需要识别并定位这些目标。
+本项目使用的数据主要是波罗的海的海洋浮游生物图像数据。数据来源是https://opendata.eawag.ch/dataset/52b6ba86-5ecb-448c-8c01-eec7cb209dc7/resource/1cc785fa-36c2-447d-bb11-92ce1d1f3f2d/download/data.zip， 图像中包含不同类型的浮游生物目标，模型需要识别并定位这些目标。
 
 数据集通常包括以下内容：
 
