@@ -85,20 +85,18 @@
 
 本仓库的文件结构大致如下：
 
+
 ```text
 .
-├── README.md              # 项目说明文档
-├── train.py               # 模型训练脚本
-├── test.py                # 模型测试脚本
-├── predict.py             # 图像预测脚本
-├── requirements.txt       # 项目依赖文件
-├── configs/               # 配置文件
-├── models/                # 模型相关代码
-├── datasets/              # 数据读取与处理代码
-├── utils/                 # 工具函数
-├── checkpoints/           # 模型权重文件
-├── images/                # 示例图片
-└── results/               # 检测结果与可视化结果
+├── README.md                    # 项目说明文档
+├── train.py                     # 模型训练脚本
+├── vis_predict.py               # 模型预测与可视化脚本
+├── mobilenet_v2.py              # MobileNetV2 网络结构相关代码
+├── prepare_zoolake_split.py     # 数据集划分脚本
+├── images/                      # 示例图片或待检测图片
+├── model/                       # 模型相关文件
+├── model_pytorch/               # PyTorch模型文件或训练权重
+└── vis_one_per_class/           # 每个类别的可视化检测结果
 ```
 
 说明：具体文件结构可能会根据实际代码有所不同，本仓库主要保留了课程作业所需的核心代码和结果文件。
@@ -141,8 +139,6 @@ pip install torch torchvision opencv-python numpy matplotlib pillow
 数据集通常包括以下内容：
 
 ```text
-images/        # 图像文件
-labels/        # 标注文件
 train/         # 训练集
 val/           # 验证集
 test/          # 测试集
@@ -150,8 +146,6 @@ test/          # 测试集
 
 其中：
 
-- `images/` 用于存放原始图像；
-- `labels/` 用于存放目标标注信息；
 - `train/` 用于模型训练；
 - `val/` 用于模型验证；
 - `test/` 用于模型测试和结果展示。
@@ -192,17 +186,6 @@ runs/
 
 ---
 
-## 十一、模型测试
-
-训练完成后，可以使用测试脚本对模型进行评估：
-
-```bash
-python test.py
-```
-
-测试过程通常会输出模型在测试集上的检测结果，例如检测框、类别、置信度等信息。
-
----
 
 ## 十二、图像预测
 
@@ -212,11 +195,6 @@ python test.py
 python predict.py --weights checkpoints/best.pth --source images/
 ```
 
-预测完成后，结果图像一般会保存在：
-
-```text
-results/
-```
 
 可视化结果中通常会包含：
 
