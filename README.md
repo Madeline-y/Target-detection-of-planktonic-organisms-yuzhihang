@@ -8,6 +8,8 @@
 
 本项目基于深度学习中的目标检测方法，对浮游生物图像进行检测实验。通过复现已有模型，我完成了从环境配置、数据准备、模型运行到结果可视化的基本流程，对目标检测和小物体检测任务有了更直观的理解。
 
+参考于https://github.com/tonylins/pytorch-mobilenet-v2
+
 ---
 
 ## 二、项目关键词
@@ -134,7 +136,7 @@ pip install torch torchvision opencv-python numpy matplotlib pillow
 
 ## 九、数据集说明
 
-本项目使用的数据主要是海洋浮游生物图像数据。图像中包含不同类型的浮游生物目标，模型需要识别并定位这些目标。
+本项目使用的数据主要是海洋浮游生物图像数据。数据来源是https://opendata.eawag.ch/dataset/52b6ba86-5ecb-448c-8c01-eec7cb209dc7/resource/1cc785fa-36c2-447d-bb11-92ce1d1f3f2d/download/data.zip，图像中包含不同类型的浮游生物目标，模型需要识别并定位这些目标。
 
 数据集通常包括以下内容：
 
@@ -238,15 +240,13 @@ results/
 └── result_3.jpg
 ```
 
-如果需要在 README 中展示图片，可以使用以下格式：
-
 ```markdown
-![检测结果示例](results/result_1.jpg)
+![检测结果示例](vis_one_per_class/aphanizomenon__pred_aphanizomenon.png)
 ```
 
 示例：
 
-![检测结果示例](results/result_1.jpg)
+![检测结果示例](vis_one_per_class/daphnia__pred_daphnia.png)
 
 ---
 
