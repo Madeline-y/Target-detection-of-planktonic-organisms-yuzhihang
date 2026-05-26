@@ -8,7 +8,7 @@
 
 本项目基于深度学习中的目标检测方法，对浮游生物图像进行检测实验。通过复现已有模型，我完成了从环境配置、数据准备、模型运行到结果可视化的基本流程，对目标检测和小物体检测任务有了更直观的理解。
 
-参考于https://github.com/tonylins/pytorch-mobilenet-v2
+模型框架参考于https://github.com/tonylins/pytorch-mobilenet-v2
 
 ---
 
