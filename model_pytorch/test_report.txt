@@ -1,0 +1,51 @@
+                      precision    recall  f1-score   support
+
+       aphanizomenon     0.9714    0.9714    0.9714        35
+          asplanchna     0.9780    0.9674    0.9727        92
+        asterionella     0.9870    0.9560    0.9712       159
+             bosmina     0.8333    0.8333    0.8333        12
+          brachionus     0.6400    0.7273    0.6809        22
+            ceratium     0.9535    1.0000    0.9762       123
+           chaoborus     1.0000    0.5000    0.6667         2
+          conochilus     0.9762    1.0000    0.9880        41
+       copepod_skins     1.0000    0.8333    0.9091         6
+             cyclops     0.8889    0.9771    0.9309       131
+             daphnia     0.9182    0.9266    0.9224       109
+       daphnia_skins     0.7000    0.8750    0.7778         8
+        diaphanosoma     0.9758    0.9817    0.9787       164
+        diatom_chain     0.0000    0.0000    0.0000         4
+           dinobryon     0.9723    0.9860    0.9791       499
+                dirt     0.3333    0.1905    0.2424        21
+         eudiaptomus     0.9552    0.7805    0.8591        82
+            filament     0.8676    0.9516    0.9077        62
+                fish     0.8824    0.8824    0.8824        34
+          fragilaria     0.8846    0.9787    0.9293        47
+               hydra     0.6667    0.5000    0.5714         4
+         kellicottia     0.9750    0.9873    0.9811        79
+keratella_cochlearis     0.8889    0.8889    0.8889        18
+  keratella_quadrata     0.9672    0.9365    0.9516        63
+           leptodora     0.8889    0.7742    0.8276        31
+         maybe_cyano     0.9299    0.9660    0.9476       206
+            nauplius     0.9780    0.9780    0.9780       227
+        paradileptus     1.0000    0.9692    0.9844        65
+          polyarthra     0.6667    0.6667    0.6667        12
+            rotifers     0.8240    0.9115    0.8655       113
+           synchaeta     0.8800    1.0000    0.9362        22
+         trichocerca     1.0000    0.8974    0.9459        39
+             unknown     0.4800    0.3158    0.3810        38
+    unknown_plankton     0.7500    0.2500    0.3750        12
+            uroglena     1.0000    1.0000    1.0000       144
+
+            accuracy                         0.9365      2726
+           macro avg     0.8461    0.8103    0.8194      2726
+        weighted avg     0.9324    0.9365    0.9327      2726
+
+
+Confusion Matrix:
+[[ 34   0   0 ...   1   0   0]
+ [  0  89   0 ...   1   0   0]
+ [  0   0 152 ...   0   0   0]
+ ...
+ [  0   0   0 ...  12   1   0]
+ [  0   0   0 ...   2   3   0]
+ [  0   0   0 ...   0   0 144]]
